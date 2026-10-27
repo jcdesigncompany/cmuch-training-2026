@@ -70,8 +70,12 @@ footer{margin-top:64px;padding-top:16px;border-top:1px solid var(--line);font-si
 <style id="sitebar-css">
 .sitebar{background:var(--surface);border-bottom:1px solid var(--line);font-family:Arial,'Microsoft JhengHei','微軟正黑體','PingFang TC',sans-serif}
 .sitebar .in{max-width:1120px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));display:flex;align-items:center;gap:4px 18px;flex-wrap:wrap}
-.sitebar .brand{font-weight:700;font-size:15px;color:var(--ink);text-decoration:none;padding:12px 0;white-space:nowrap}
+.sitebar .brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:15px;color:var(--ink);text-decoration:none;padding:10px 0;white-space:nowrap}
 .sitebar .brand small{font-weight:400;color:var(--muted);margin-left:6px}
+.sitebar .slogo{display:block;height:34px;width:auto;border-radius:6px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .sitebar .slogo{background:#fff;padding:4px 8px}}
+:root[data-theme="dark"] .sitebar .slogo{background:#fff;padding:4px 8px}
+@media (max-width:760px){.sitebar .slogo{height:28px}.sitebar .brand span{display:none}}
 .sitebar ol{list-style:none;margin:0 0 0 auto;padding:0;display:flex;flex-wrap:wrap;gap:0 2px}
 .sitebar a.lk{display:block;padding:12px 10px;font-size:15px;color:var(--muted);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent}
 .sitebar a.lk:hover{color:var(--ink)} .sitebar a.lk[aria-current]{color:var(--ink);font-weight:700;border-bottom-color:var(--accent)}
@@ -79,7 +83,7 @@ footer{margin-top:64px;padding-top:16px;border-top:1px solid var(--line);font-si
 @media (max-width:760px){.sitebar ol{margin-left:-10px}.sitebar .brand{padding-bottom:0}.sitebar a.lk{padding:8px 9px}.sitebar a.lk.sep{margin-left:4px;padding-left:12px}}
 </style>
 </head><body>
-<nav class="sitebar" aria-label="網站導覽"><div class="in"><a class="brand" href="./">健康台灣深耕計畫<small>範疇二・中國醫藥大學兒童醫院</small></a><ol><li><a class="lk" href="./" aria-current="page">總覽</a></li><li><a class="lk" href="./#g1">目標一</a></li><li><a class="lk" href="./#g2">目標二</a></li><li><a class="lk" href="./#g3">目標三</a></li><li><a class="lk" href="./#g4">目標四</a></li><li><a class="lk sep" href="./training/">外訓歷程</a></li></ol></div></nav>
+<nav class="sitebar" aria-label="網站導覽"><div class="in"><a class="brand" href="./"><img class="slogo" src="./logo.webp" alt="中國醫藥大學兒童醫院" width="243" height="34"><span>健康台灣深耕計畫<small>範疇二</small></span></a><ol><li><a class="lk" href="./" aria-current="page">總覽</a></li><li><a class="lk" href="./#g1">目標一</a></li><li><a class="lk" href="./#g2">目標二</a></li><li><a class="lk" href="./#g3">目標三</a></li><li><a class="lk" href="./#g4">目標四</a></li><li><a class="lk sep" href="./training/">外訓歷程</a></li></ol></div></nav>
 <div class="wrap">
 <header class="top">
   <p class="eyebrow">健康台灣深耕計畫｜範疇二</p>
