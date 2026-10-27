@@ -1,645 +1,127 @@
 <!doctype html>
-<html lang="zh-Hant">
-<head>
-<meta charset="utf-8">
+<html lang="zh-Hant"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>2026 外訓歷程</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<title>範疇二 多元人才培訓</title>
+<meta name="robots" content="noindex">
 <style>
-/* Layout: a travel journal. Hero with a winding route of six stops → colorful event cards with icons → each opens a page of meeting notes under a tinted banner. */
-:root{
-  --bg:#F4F5F6; --surface:#FFFFFF; --ink:#2B3035; --muted:#5C6367; --line:#DFE2E5; --accent:#C9452F; --tag-bg:#EEF1F4;
-  --e1:#E8513C; --e2:#45B8A6; --e3:#C47AB8; --e4:#3A9AD9; --e5:#E5B567; --e6:#2577A6;
-  --e1t:#C2402B; --e2t:#2B8A7A; --e3t:#9B4E8F; --e4t:#1F6FA8; --e5t:#946612; --e6t:#2577A6;
-  --route:#8E9296;
-  --font:Arial, 'Microsoft JhengHei', '微軟正黑體', 'PingFang TC', sans-serif;
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#1E2226; --surface:#292E33; --ink:#EEF0F2; --muted:#A7ABAE; --line:#3A4046; --accent:#F45B5B; --tag-bg:#323A44;
-  --e1t:#F7877A; --e2t:#7DD3B0; --e3t:#D9A3D0; --e4t:#8DB4D6; --e5t:#E5B567; --e6t:#7FD3D9; --route:#6E7B91; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#1E2226; --surface:#292E33; --ink:#EEF0F2; --muted:#A7ABAE; --line:#3A4046; --accent:#F45B5B; --tag-bg:#323A44;
-  --e1t:#F7877A; --e2t:#7DD3B0; --e3t:#D9A3D0; --e4t:#8DB4D6; --e5t:#E5B567; --e6t:#7FD3D9; --route:#6E7B91; color-scheme:dark}
-.ev1{--c:var(--e1);--ct:var(--e1t)} .ev2{--c:var(--e2);--ct:var(--e2t)} .ev3{--c:var(--e3);--ct:var(--e3t)}
-.ev4{--c:var(--e4);--ct:var(--e4t)} .ev5{--c:var(--e5);--ct:var(--e5t)} .ev6{--c:var(--e6);--ct:var(--e6t)}
-.evo{--c:var(--accent);--ct:var(--accent)}
-
-*{box-sizing:border-box}
-[hidden]{display:none!important}
+:root{--bg:#F4F5F6;--surface:#FFFFFF;--ink:#2B3035;--muted:#5C6367;--line:#DFE2E5;--accent:#C9452F;--track:#EEF1F4;
+  --e1:#E8513C;--e2:#45B8A6;--e4:#3A9AD9;--e5:#E5B567;--e6:#2577A6;--e1t:#C2402B;--e2t:#2B8A7A;--e4t:#1F6FA8;--e5t:#946612;
+  --font:Arial,'Microsoft JhengHei','微軟正黑體','PingFang TC',sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1E2226;--surface:#292E33;--ink:#EEF0F2;--muted:#A7ABAE;--line:#3A4046;--accent:#F45B5B;--track:#323A44;
+  --e1t:#F7877A;--e2t:#7DD3B0;--e4t:#8DB4D6;--e5t:#E5B567;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1E2226;--surface:#292E33;--ink:#EEF0F2;--muted:#A7ABAE;--line:#3A4046;--accent:#F45B5B;--track:#323A44;
+  --e1t:#F7877A;--e2t:#7DD3B0;--e4t:#8DB4D6;--e5t:#E5B567;color-scheme:dark}
+.ev-e1{--c:var(--e1);--ct:var(--e1t)} .ev-e2{--c:var(--e2);--ct:var(--e2t)} .ev-e4{--c:var(--e4);--ct:var(--e4t)} .ev-e5{--c:var(--e5);--ct:var(--e5t)}
+*{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:12px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.75}
-a{color:var(--ct,var(--e4t))} a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
-h1,h2,h3,h4{text-wrap:balance;margin:0;font-weight:700}
-p,ul{margin:0}
-.ic{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-
-/* hero */
-header.mast{padding-block:52px 8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-right,0px)) 64px max(16px,env(safe-area-inset-left,0px))}
+h1,h2,h3{margin:0;font-weight:700;text-wrap:balance} p,ul{margin:0} ul{list-style:none;padding:0}
+a{color:var(--e4t)} a:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.num{font-variant-numeric:tabular-nums}
+header{padding:40px 0 8px}
 .eyebrow{display:inline-block;font-size:14px;font-weight:700;letter-spacing:.08em;color:var(--surface);background:var(--accent);padding:4px 14px;border-radius:999px}
-header.mast h1{font-size:clamp(32px,5.2vw,52px);line-height:1.25;margin-top:16px}
-.lede{font-size:18px;color:var(--muted);max-width:36em;margin-top:10px}
-.byline{margin-top:10px;font-size:14px;color:var(--muted)}
-.route{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:12px 8px 4px;overflow-x:auto}
-.route svg{display:block;width:100%;min-width:640px;height:auto}
-.route .path{fill:none;stroke:var(--route);stroke-width:3;stroke-dasharray:2 10;stroke-linecap:round}
-.route .stop circle.ring{fill:var(--surface);stroke:var(--c);stroke-width:5}
-.route .stop circle.core{fill:var(--c)}
-.route .stop use{color:var(--surface)}
-.route .stop text{font-family:var(--font);fill:var(--ink);font-size:17px;font-weight:700;text-anchor:middle}
-.route .stop text.sm{font-size:14px;font-weight:400;fill:var(--muted)}
-.route .stop{cursor:pointer}
-.route .stop .bob{transition:transform .2s;transform-box:fill-box;transform-origin:center}
-.route .stop:hover .bob,.route .stop:focus .bob{transform:translateY(-6px) scale(1.06)}
-.route .traveler{fill:var(--accent)}
-.route .hint{font-size:13px;color:var(--muted);text-align:right;padding:0 12px 8px}
-.stats{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:24px}
-.stat b{font-size:24px}
-.stat span{display:block;font-size:14px;color:var(--muted)}
-
-/* rail */
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
-nav.rail{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin-top:28px}
-.rail ol{list-style:none;margin:0;padding:0;display:flex;gap:4px;overflow-x:auto;scrollbar-width:thin}
-.rail li{flex:1 0 auto}
-.rail a{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:12px 14px 10px;text-decoration:none;color:var(--muted);border-bottom:4px solid transparent;white-space:nowrap}
-.rail a .d{font-weight:700;font-size:16px;color:var(--ink)}
-.rail a .n{font-size:13px}
-.rail a .dot{width:10px;height:10px;border-radius:50%;background:var(--c);display:inline-block;margin-right:6px}
-.rail a.on{border-bottom-color:var(--c);color:var(--ink)}
-
-/* cards */
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:36px}
-.card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .2s, box-shadow .2s}
-.card:hover{transform:translateY(-6px) rotate(-.4deg);box-shadow:0 14px 30px rgba(30,40,60,.14)}
-.cardtop{position:relative;height:118px;background:var(--c);display:flex;align-items:flex-end;justify-content:space-between;padding:14px 20px;overflow:hidden}
-.cardtop::before{content:"";position:absolute;width:150px;height:150px;border-radius:50%;background:rgba(255,255,255,.18);right:-30px;top:-50px}
-.cardtop::after{content:"";position:absolute;width:70px;height:70px;border-radius:50%;background:rgba(255,255,255,.14);left:40%;bottom:-30px}
-.cardtop .dd{position:relative;font-size:34px;font-weight:700;color:#FFFFFF;line-height:1;text-shadow:0 1px 2px rgba(0,0,0,.18)}
-.cardtop .big-ic{position:relative;font-size:58px;color:#FFFFFF;transition:transform .3s}
-.card:hover .big-ic{transform:rotate(-10deg) scale(1.1)}
-.cardbody{display:flex;flex-direction:column;gap:8px;padding:18px 20px 20px;flex:1}
-.cardbody .meta{font-size:14px;font-weight:700;color:var(--ct)}
-.cardbody h3{font-size:19px;line-height:1.45}
-.cardbody .host{font-size:14px;color:var(--muted)}
-.cardbody .desc{font-size:15px}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
-.tag{font-size:13px;padding:3px 10px;border-radius:999px;background:var(--tag-bg)}
-.cardbody .go{margin-top:auto;padding-top:6px;font-size:14px;font-weight:700;color:var(--ct)}
-
-/* detail */
-.detail{padding-block:28px 64px}
-.back{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px}
-.back a{text-decoration:none;font-weight:700}
-.banner{position:relative;display:grid;grid-template-columns:132px minmax(0,1fr);gap:28px;align-items:start;margin-top:20px;padding:30px 32px;border-radius:24px;background:var(--surface);border:1px solid var(--line);overflow:hidden}
-.banner::before{content:"";position:absolute;inset:0 0 auto 0;height:10px;background:var(--c)}
-.bicon{width:132px;height:132px;border-radius:50%;background:var(--c);display:grid;place-items:center;font-size:68px;color:#FFFFFF;margin-top:8px}
-.bdate{display:inline-block;font-size:15px;font-weight:700;color:var(--ct);margin-top:8px}
-.banner h2{font-size:clamp(24px,3vw,32px);line-height:1.4;margin-top:4px}
-.banner .host{margin-top:6px;color:var(--muted);font-size:15px}
-.banner .desc{margin-top:12px;max-width:62ch}
-.figs{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
-.fig{background:var(--tag-bg);border-radius:14px;padding:12px 18px;flex:1 1 180px}
-.fig b{font-size:22px;color:var(--ct)}
-.fig p{font-size:14px;color:var(--muted)}
-
-.notes{display:grid;grid-template-columns:220px minmax(0,1fr);gap:40px;margin-top:36px}
-.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 90px);align-self:start;display:flex;flex-direction:column;gap:4px;font-size:14px}
-.toc p{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--muted);margin-bottom:6px}
-.toc button{all:unset;cursor:pointer;padding:7px 12px;border-radius:10px;color:var(--muted);line-height:1.45}
-.toc button:hover{color:var(--ink);background:var(--tag-bg)}
-.toc button:focus-visible{outline:2px solid var(--accent)}
-.chapters{display:flex;flex-direction:column;gap:32px;min-width:0}
-.chapter > h3{display:flex;align-items:center;gap:10px;font-size:21px;scroll-margin-top:90px}
-.chapter > h3::before{content:"";flex:none;width:14px;height:14px;border-radius:50%;background:var(--c)}
-.chapter > .sub{font-size:14px;color:var(--muted);margin-top:8px}
-.talk{margin-top:14px;padding:16px 20px;background:var(--surface);border:1px solid var(--line);border-radius:16px}
-.talk h4{font-size:17px;line-height:1.5}
-.talk .who{display:inline-block;font-size:13px;color:var(--ct);background:var(--tag-bg);border-radius:999px;padding:2px 10px;margin-top:6px}
-.talk ul{margin-top:10px;padding-left:1.2em;display:flex;flex-direction:column;gap:6px;max-width:70ch}
-.talk h4 + ul, .talk .who + ul{margin-top:10px}
-.talk ul:first-child{margin-top:0}
-.talk li::marker{color:var(--c)}
-.pager{display:flex;justify-content:space-between;gap:16px;margin-top:48px}
-.pager a{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);max-width:48%;font-weight:700;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 18px;transition:transform .2s}
-.pager a:hover{transform:translateY(-3px)}
-.pager a span{font-size:13px;color:var(--muted);font-weight:400}
-.pager a.next{text-align:right;margin-left:auto}
-footer{padding-block:48px;color:var(--muted);font-size:13px}
-
-@media (max-width:980px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:700px){
-  .cards{grid-template-columns:minmax(0,1fr)}
-  .banner{grid-template-columns:minmax(0,1fr);gap:8px;padding:26px 20px}
-  .bicon{width:84px;height:84px;font-size:44px}
-  .notes{grid-template-columns:minmax(0,1fr);gap:16px}
-  .toc{position:static;flex-direction:row;flex-wrap:wrap;gap:6px}
-  .toc p{width:100%;margin:0}
-  .toc button{border:1px solid var(--line);border-radius:999px;padding:4px 12px}
-}
-@media (prefers-reduced-motion:reduce){.card,.card:hover,.big-ic,.pager a{transition:none;transform:none!important}}
+header h1{font-size:clamp(30px,5vw,48px);line-height:1.25;margin-top:16px}
+.lede{font-size:18px;color:var(--muted);max-width:38em;margin-top:10px}
+.asof{margin-top:8px;font-size:14px;color:var(--muted)}
+.hero{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:22px}
+.gcards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:28px}
+.gcard{display:flex;flex-direction:column;gap:4px;background:var(--surface);border:1px solid var(--line);border-top:8px solid var(--c);border-radius:20px;padding:18px 20px;text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s}
+.gcard:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(30,40,60,.12)}
+.gcard .gname{font-weight:700;font-size:18px;line-height:1.4} .gcard .big{font-size:34px;font-weight:700;line-height:1.2;margin-top:6px}
+.gcard .big small{font-size:15px;font-weight:400;color:var(--muted);margin-left:2px} .axis{font-size:14px;color:var(--muted)}
+.gcard .more{margin-top:auto;padding-top:8px;font-size:14px;font-weight:700;color:var(--ct)}
+.gno{font-size:14px;font-weight:700;color:var(--ct)}
+section.goal{margin-top:56px}
+.ghead{border-left:8px solid var(--c);padding-left:14px;margin-bottom:16px} .ghead h2{font-size:26px;line-height:1.35}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px 22px;margin-top:18px}
+.ghead+.card{margin-top:0}
+.kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px}
+.kpis li{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:2px 12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.kpis .lb{color:var(--muted)} .kpis b{font-size:24px} .kpis small{font-size:14px;font-weight:400;color:var(--muted);margin-left:2px}
+.kpis .bar,.kpis .pct{grid-column:1/-1} .pct{font-size:13px;color:var(--muted)}
+.bar{height:8px;background:var(--track);border-radius:4px;overflow:hidden} .bar i{display:block;height:100%;background:var(--c,var(--e2));border-radius:4px}
+.stats{display:flex;flex-wrap:wrap;gap:12px 40px;margin-bottom:16px}
+.stat b{font-size:30px;display:block;line-height:1.2} .stat span{font-size:14px;color:var(--muted)} .stat .of{font-size:16px;color:var(--muted)}
+.two{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:0 18px}
+h3.sub{font-size:17px;margin-bottom:12px} .cap{font-weight:700;font-size:15px}
+.months{display:flex;align-items:flex-end;gap:4px;height:190px;padding-top:28px}
+.mcol{position:relative;flex:1 1 0;min-width:0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center}
+.mcol i{display:block;width:70%;max-width:34px;background:var(--c);border-radius:4px 4px 0 0;min-height:2px}
+.mcol em{font-style:normal;font-size:12px;color:var(--muted);margin-top:4px}
+.mcol .tip{position:absolute;top:0;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:12px;line-height:1.4;background:var(--ink);color:var(--surface);padding:4px 8px;border-radius:6px;opacity:0;pointer-events:none;transition:opacity .15s;text-align:center;z-index:2}
+.mcol:first-child .tip{left:0;transform:none} .mcol:last-child .tip{left:auto;right:0;transform:none}
+.mcol:hover .tip,.mcol:focus .tip{opacity:1} .mcol:hover i{filter:brightness(.9)}
+table{width:100%;border-collapse:collapse;font-size:15px} th,td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left}
+th{font-size:13px;color:var(--muted);font-weight:700;white-space:nowrap} td:first-child{white-space:nowrap} .r{text-align:right;font-variant-numeric:tabular-nums}
+.roles li{display:grid;grid-template-columns:7.5em 1fr 3.2em 3.6em;align-items:center;gap:10px;padding:5px 0;font-size:15px}
+.roles b{text-align:right} .roles small{color:var(--muted);text-align:right}
+.note{font-size:13px;color:var(--muted);margin-top:12px} .cap .note{font-weight:400}
+.budget li{padding:12px 0;border-top:1px solid var(--line)} .budget li:first-child{border-top:0;padding-top:0} .budget .bar{height:10px;margin:6px 0}
+.bh{display:flex;justify-content:space-between;gap:12px} .bh b{font-size:20px} .bs{font-size:14px;color:var(--muted)}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+@media (max-width:960px){.gcards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.gcards,.two,.kpis{grid-template-columns:1fr} .roles li{grid-template-columns:6.5em 1fr 3em 3.4em}}
 </style>
-
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-hosp" viewBox="0 0 24 24"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-5h6v5"/><path d="M12 7.5v5M9.5 10h5"/><path d="M2 21h20"/></symbol>
-  <symbol id="i-team" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M2.5 20c0-3.3 2.5-6 5.5-6s5.5 2.7 5.5 6"/><path d="M14 14.5c.8-.4 1.6-.5 2.5-.5 2.8 0 5 2.3 5 5.5"/></symbol>
-  <symbol id="i-kid" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4.5"/><path d="M9 11.5l-1 1.5h2z"/><path d="M9 13c0 3 2 4 4.5 5.5S17 21 17 22"/><circle cx="17.5" cy="9" r="3"/><path d="M17.5 12l-.6 1h1.2z"/><path d="M17.5 13c0 2-1 3.5-2 4.5"/></symbol>
-  <symbol id="i-grad" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 9v6"/></symbol>
-  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1.5A3.5 3.5 0 0 0 7.5 11"/><path d="M17 6h3v1.5a3.5 3.5 0 0 1-3.5 3.5"/><path d="M12 14v4"/><path d="M8 21h8l-1-3H9z"/></symbol>
-  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></symbol>
-</svg>
-
-<div id="view-overview">
+<style id="sitebar-css">
+.sitebar{background:var(--surface);border-bottom:1px solid var(--line);font-family:Arial,'Microsoft JhengHei','微軟正黑體','PingFang TC',sans-serif}
+.sitebar .in{max-width:1120px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-right,0px)) 0 max(16px,env(safe-area-inset-left,0px));display:flex;align-items:center;gap:4px 18px;flex-wrap:wrap}
+.sitebar .brand{font-weight:700;font-size:15px;color:var(--ink);text-decoration:none;padding:12px 0;white-space:nowrap}
+.sitebar .brand small{font-weight:400;color:var(--muted);margin-left:6px}
+.sitebar ol{list-style:none;margin:0 0 0 auto;padding:0;display:flex;flex-wrap:wrap;gap:0 2px}
+.sitebar a.lk{display:block;padding:12px 10px;font-size:15px;color:var(--muted);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent}
+.sitebar a.lk:hover{color:var(--ink)} .sitebar a.lk[aria-current]{color:var(--ink);font-weight:700;border-bottom-color:var(--accent)}
+.sitebar a.lk.sep{margin-left:10px;border-left:1px solid var(--line);padding-left:16px}
+@media (max-width:760px){.sitebar ol{margin-left:-10px}.sitebar .brand{padding-bottom:0}.sitebar a.lk{padding:8px 9px}.sitebar a.lk.sep{margin-left:4px;padding-left:12px}}
+</style>
+</head><body>
+<nav class="sitebar" aria-label="網站導覽"><div class="in"><a class="brand" href="./">健康台灣深耕計畫<small>範疇二・中國醫藥大學兒童醫院</small></a><ol><li><a class="lk" href="./" aria-current="page">總覽</a></li><li><a class="lk" href="./#g1">目標一</a></li><li><a class="lk" href="./#g2">目標二</a></li><li><a class="lk" href="./#g3">目標三</a></li><li><a class="lk" href="./#g4">目標四</a></li><li><a class="lk sep" href="./training/">外訓歷程</a></li></ol></div></nav>
 <div class="wrap">
-<header class="mast">
-  <p class="eyebrow">2026 年度外訓歷程</p>
-  <h1>中國醫藥大學兒童醫院</h1>
-  <p class="lede">從高雄、台北到台中，今年一共走了 6 場外訓。點選路線上的站點或下方卡片，就能看到當天的會議重點。</p>
-  <p class="byline">整理：謝書文 專案經理</p>
-  <div class="route" id="route" aria-label="外訓路線"></div>
-  <div class="stats">
-    <div class="stat"><b>6 場</b><span>外訓活動</span></div>
-    <div class="stat"><b>3 月至 10 月</b><span>活動期間</span></div>
-    <div class="stat"><b>高雄・台北・台中</b><span>走訪城市</span></div>
+<header>
+  <p class="eyebrow">健康台灣深耕計畫｜範疇二</p>
+  <h1>規劃多元人才培訓</h1>
+  <p class="lede">中國醫藥大學兒童醫院以四個目標推動範疇二。點選目標卡片看各項指標與相關數據；本站只呈現彙總數字，不含任何個人資料。</p>
+  <p class="asof">資料截至 115 年 10 月 27 日</p>
+  <div class="hero">
+    <div class="stat"><b class="num">103</b><span>IPP 跨領域團隊會議場次</span></div>
+    <div class="stat"><b class="num">751</b><span>IPP 完訓人次</span></div>
+    <div class="stat"><b class="num">39.8%</b><span>兒童醫院臨床教師認證率</span></div>
+    <div class="stat"><b class="num">71.1%</b><span>主要科目經費執行率</span></div>
   </div>
 </header>
+
+<div class="gcards"><a class="gcard ev-e4" href="#g1"><span class="gno">目標一</span><span class="gname">提供持續教育和專業發展機會</span><span class="axis">主軸：專業培訓和進修機會</span><span class="big num">26<small>人次</small></span><span class="axis">海外進修／國際會議｜目標 3人次</span><span class="more">4 項指標 →</span></a><a class="gcard ev-e2" href="#g2"><span class="gno">目標二</span><span class="gname">促進醫事人員跨領域合作和學習</span><span class="axis">主軸：跨域培訓人數、工作坊參與率</span><span class="big num">1,217<small>人</small></span><span class="axis">跨域醫事人才培訓｜目標 80人</span><span class="more">3 項指標 →</span></a><a class="gcard ev-e1" href="#g3"><span class="gno">目標三</span><span class="gname">提高急重難科醫師的回流醫院誘因</span><span class="axis">主軸：急重症人力穩定性提升率</span><span class="big num">100<small>%</small></span><span class="axis">急重症單位留任率｜目標 65%</span><span class="more">4 項指標 →</span></a><a class="gcard ev-e5" href="#g4"><span class="gno">目標四</span><span class="gname">建立明確的職涯發展路徑</span><span class="axis">主軸：強化導師制度</span><span class="big num">4<small>位</small></span><span class="axis">新增年輕主治醫師導師｜目標 2位</span><span class="more">3 項指標 →</span></a></div>
+
+<section class="goal ev-e4" id="g1"><div class="ghead"><p class="gno">目標一</p><h2>提供持續教育和專業發展機會</h2><p class="axis">主軸：專業培訓和進修機會</p></div><div class="card"><ul class="kpis"><li><span class="lb">海外進修／國際會議</span><b class="num">26<small>人次</small></b><div class="bar" role="img" aria-label="達成 866.7%"><i style="width:100.0%"></i></div><span class="pct">目標 3人次｜已達標</span></li><li><span class="lb">國際研討會</span><b class="num">11<small>場</small></b></li><li><span class="lb">臨床教師培育課程完訓</span><b class="num">634<small>人次</small></b></li><li><span class="lb">Clinical Coach 認證</span><b class="num">7<small>人</small></b></li></ul></div><div class="card"><h3 class="sub">相關經費執行</h3><ul class="budget"><li><div class="bh"><span class="lb">出國進修</span><b class="num">41.1%</b></div><div class="bar"><i style="width:41.1%"></i></div><p class="bs">已核銷 2,793,148 元／核定 6,793,976 元</p></li><li><div class="bh"><span class="lb">研討會</span><b class="num">78.5%</b></div><div class="bar"><i style="width:78.5%"></i></div><p class="bs">已核銷 9,423,997 元／核定 12,000,000 元</p></li></ul></div></section><section class="goal ev-e2" id="g2"><div class="ghead"><p class="gno">目標二</p><h2>促進醫事人員跨領域合作和學習</h2><p class="axis">主軸：跨域培訓人數、工作坊參與率</p></div><div class="card"><ul class="kpis"><li><span class="lb">跨域醫事人才培訓</span><b class="num">1,217<small>人</small></b><div class="bar" role="img" aria-label="達成 1,521.2%"><i style="width:100.0%"></i></div><span class="pct">目標 80人｜已達標</span></li><li><span class="lb">IPP 跨領域團隊會議</span><b class="num">103<small>場</small></b></li><li><span class="lb">跨部門合作工作坊參與率</span><b class="num">86.7<small>%</small></b><div class="bar" role="img" aria-label="達成 578%"><i style="width:100.0%"></i></div><span class="pct">目標 15%｜已達標</span></li></ul></div><div class="card"><h3 class="sub">IPP 跨領域團隊會議（114/9–115/10）</h3>
+  <div class="stats">
+    <div class="stat"><b class="num">11</b><span>跨領域團隊</span></div>
+    <div class="stat"><b class="num">103</b><span>已辦理場次</span></div>
+    <div class="stat"><b class="num">751</b><span>完訓人次</span></div>
+    <div class="stat"><b class="num">6</b><span>參與人員類別</span></div>
+    <div class="stat"><b class="num">12</b><span>已排定場次</span></div>
+  </div>
+  <p class="cap">每月完訓人次<span class="note">　橫軸為月份，滑過長條看場次與人次</span></p>
+  <div class="months" role="img" aria-label="每月完訓人次長條圖，數字見下方團隊表"><div class="mcol" tabindex="0" aria-label="114/9：7 場、43 人次"><span class="tip">114/9<br>7 場・43 人次</span><i style="height:53.1%"></i><em>9</em></div><div class="mcol" tabindex="0" aria-label="114/10：7 場、38 人次"><span class="tip">114/10<br>7 場・38 人次</span><i style="height:46.9%"></i><em>10</em></div><div class="mcol" tabindex="0" aria-label="114/11：6 場、50 人次"><span class="tip">114/11<br>6 場・50 人次</span><i style="height:61.7%"></i><em>11</em></div><div class="mcol" tabindex="0" aria-label="114/12：7 場、52 人次"><span class="tip">114/12<br>7 場・52 人次</span><i style="height:64.2%"></i><em>12</em></div><div class="mcol" tabindex="0" aria-label="115/1：8 場、53 人次"><span class="tip">115/1<br>8 場・53 人次</span><i style="height:65.4%"></i><em>1</em></div><div class="mcol" tabindex="0" aria-label="115/2：4 場、19 人次"><span class="tip">115/2<br>4 場・19 人次</span><i style="height:23.5%"></i><em>2</em></div><div class="mcol" tabindex="0" aria-label="115/3：10 場、81 人次"><span class="tip">115/3<br>10 場・81 人次</span><i style="height:100.0%"></i><em>3</em></div><div class="mcol" tabindex="0" aria-label="115/4：6 場、55 人次"><span class="tip">115/4<br>6 場・55 人次</span><i style="height:67.9%"></i><em>4</em></div><div class="mcol" tabindex="0" aria-label="115/5：8 場、60 人次"><span class="tip">115/5<br>8 場・60 人次</span><i style="height:74.1%"></i><em>5</em></div><div class="mcol" tabindex="0" aria-label="115/6：9 場、77 人次"><span class="tip">115/6<br>9 場・77 人次</span><i style="height:95.1%"></i><em>6</em></div><div class="mcol" tabindex="0" aria-label="115/7：8 場、65 人次"><span class="tip">115/7<br>8 場・65 人次</span><i style="height:80.2%"></i><em>7</em></div><div class="mcol" tabindex="0" aria-label="115/8：9 場、66 人次"><span class="tip">115/8<br>9 場・66 人次</span><i style="height:81.5%"></i><em>8</em></div><div class="mcol" tabindex="0" aria-label="115/9：8 場、61 人次"><span class="tip">115/9<br>8 場・61 人次</span><i style="height:75.3%"></i><em>9</em></div><div class="mcol" tabindex="0" aria-label="115/10：6 場、31 人次"><span class="tip">115/10<br>6 場・31 人次</span><i style="height:38.3%"></i><em>10</em></div></div>
 </div>
-</div>
-
-<nav class="rail" aria-label="場次">
-  <div class="wrap"><ol>
-    <li><a href="#overview" data-v="overview" class="evo"><span class="d">總覽</span><span class="n">全部場次</span></a></li>
-    <li><a href="#e0321" data-v="e0321" class="ev1"><span class="d"><i class="dot"></i>03.21</span><span class="n">高醫 × 高榮</span></a></li>
-    <li><a href="#e0407" data-v="e0407" class="ev2"><span class="d"><i class="dot"></i>04.07</span><span class="n">台北慈濟</span></a></li>
-    <li><a href="#e0411" data-v="e0411" class="ev3"><span class="d"><i class="dot"></i>04.11</span><span class="n">臺大兒醫</span></a></li>
-    <li><a href="#e0808" data-v="e0808" class="ev4"><span class="d"><i class="dot"></i>08.08</span><span class="n">北醫附醫</span></a></li>
-    <li><a href="#e1008" data-v="e1008" class="ev5"><span class="d"><i class="dot"></i>10.08</span><span class="n">臺中榮總</span></a></li>
-    <li><a href="#e1019" data-v="e1019" class="ev6"><span class="d"><i class="dot"></i>10.19</span><span class="n">全球健康福祉論壇</span></a></li>
-  </ol></div>
-</nav>
-
-<main class="wrap" id="overview-main">
-<div class="cards">
-  <a class="card ev1" href="#e0321"><div class="cardtop"><span class="dd">03.21</span><svg class="ic big-ic"><use href="#i-hosp"/></svg></div><div class="cardbody"><p class="meta">星期六｜高雄</p><h3>健康臺灣深耕計畫發表會</h3><p class="host">高雄醫學大學附設醫院 × 高雄榮民總醫院</p><p class="desc">兩院分享人才培育、AI 智慧醫療、護理留才與南部精準醫療聯盟的推動經驗。</p><div class="tags"><span class="tag">人才培育</span><span class="tag">智慧醫療</span><span class="tag">護理留才</span></div><span class="go">查看會議重點 →</span></div></a>
-  <a class="card ev2" href="#e0407"><div class="cardtop"><span class="dd">04.07</span><svg class="ic big-ic"><use href="#i-team"/></svg></div><div class="cardbody"><p class="meta">星期二｜台北</p><h3>健康臺灣深耕計畫交流</h3><p class="host">台北慈濟醫院</p><p class="desc">依範疇一到範疇四，分享職場優化、人才培育、智慧科技與永續治理的做法和遇到的困難。</p><div class="tags"><span class="tag">KPI 與 OKR</span><span class="tag">CBME</span><span class="tag">智慧科技</span></div><span class="go">查看會議重點 →</span></div></a>
-  <a class="card ev3" href="#e0411"><div class="cardtop"><span class="dd">04.11</span><svg class="ic big-ic"><use href="#i-kid"/></svg></div><div class="cardbody"><p class="meta">星期六｜台北</p><h3>兒童醫療的新境界與未來展望</h3><p class="host">臺大醫院小兒部 120 週年暨臺大兒童醫院健康台灣深耕論壇</p><p class="desc">健保署、醫事司長官說明兒童醫療政策，臺大兒醫各次專科分享發展方向。</p><div class="tags"><span class="tag">兒童醫療網</span><span class="tag">次專科發展</span><span class="tag">人才培訓</span></div><span class="go">查看會議重點 →</span></div></a>
-  <a class="card ev4" href="#e0808"><div class="cardtop"><span class="dd">08.08</span><svg class="ic big-ic"><use href="#i-grad"/></svg></div><div class="cardbody"><p class="meta">星期六｜台北</p><h3>第三屆臺北醫學會 The Future is now</h3><p class="host">臺北醫學大學附設醫院</p><p class="desc">從健康政策、AI 精準醫療，談到醫學教育的評量回饋、教練式引導與模擬教學。</p><div class="tags"><span class="tag">醫學教育</span><span class="tag">AI</span><span class="tag">模擬教學</span></div><span class="go">查看會議重點 →</span></div></a>
-  <a class="card ev5" href="#e1008"><div class="cardtop"><span class="dd">10.08</span><svg class="ic big-ic"><use href="#i-trophy"/></svg></div><div class="cardbody"><p class="meta">星期四｜台中</p><h3>健康臺灣深耕計畫成果發表</h3><p class="host">臺中榮民總醫院</p><p class="desc">中部各院發表深耕計畫成果，並介紹衛福部的醫療資訊標準平台。</p><div class="tags"><span class="tag">範疇二</span><span class="tag">人才留任</span><span class="tag">資料標準</span></div><span class="go">查看會議重點 →</span></div></a>
-  <a class="card ev6" href="#e1019"><div class="cardtop"><span class="dd">10.19</span><svg class="ic big-ic"><use href="#i-globe"/></svg></div><div class="cardbody"><p class="meta">星期一｜台北</p><h3>2026 全球健康福祉論壇</h3><p class="host">台北國際會議中心（全英文）</p><p class="desc">以「打造以信任為核心的數位健康」為主題，談資料標準、AI 治理與社區照護。</p><div class="tags"><span class="tag">數位健康</span><span class="tag">AI 治理</span><span class="tag">國際交流</span></div><span class="go">查看會議重點 →</span></div></a>
-</div>
-<footer>資料來源：各場次會議筆記、錄音整理與現場資料。</footer>
-</main>
-
-<!-- ===================== 03.21 ===================== -->
-<main class="wrap detail ev1" id="e0321" data-prev="" data-next="e0407" hidden>
-  <div class="back"><a href="#overview">← 返回總覽</a><span>1 / 6</span></div>
-  <div class="banner"><div class="bicon"><svg class="ic"><use href="#i-hosp"/></svg></div><div><p class="bdate">03.21 · 星期六 · 高雄</p><h2>健康臺灣深耕計畫發表會</h2><p class="host">高雄醫學大學附設醫院 × 高雄榮民總醫院</p><p class="desc">兩院分享人才培育、AI 智慧醫療、護理留才與南部精準醫療聯盟的推動經驗。</p></div></div>
-  <div class="notes">
-    <nav class="toc" aria-label="本場章節"><p>會議重點</p></nav>
-    <div class="chapters">
-      <section class="chapter"><h3>醫學教育與人才培育</h3>
-        <div class="talk"><ul>
-          <li>把能力導向醫學教育（CBME）和「韌性」結合。韌性指的是在高壓環境下，仍有能力做出好的選擇、面對困難，而不只是忍耐。</li>
-          <li>用 AI 協助產生教學案例，搭配 VR、AR 訓練，減輕老師負擔，也讓學習更有趣。</li>
-          <li>課程與 ACGME、AMA 等國際機構接軌；實習平台以學習任務為主，而不只是記錄歷程，讓教學成效可以被外部檢視。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>AI 與智慧醫療</h3>
-        <div class="talk"><h4>臨床決策輔助</h4><ul>
-          <li>口腔癌：AI 分析多種檢驗資料，協助醫師決定手術、化療或免疫治療的先後順序，講者表示準確度超過九成。</li>
-          <li>大腸鏡：AI 即時找出息肉、判斷良性或惡性，並自動產生初步報告。</li>
-        </ul></div>
-        <div class="talk"><h4>急診智慧化</h4><ul>
-          <li>「火線指揮官」系統 30 秒內就能調閱病人在其他醫院的病歷，並依最新指引提醒醫師。</li>
-          <li>AI 預診機器人在檢傷時用語音或文字問診，把病人的描述整理成清楚的病史給醫師參考。</li>
-        </ul></div>
-        <div class="talk"><h4>行政管理</h4><ul>
-          <li>AI 協助撰寫護理紀錄；智慧排班系統符合勞基法，講者分享排班時間減少了 75%；另有醫院營運看板即時掌握狀況。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>精準醫療與區域合作</h3>
-        <div class="talk"><ul>
-          <li>成立南部精準醫療聯盟，以醫學中心為核心，把基因檢測和分析能力分享給區域醫院與社區診所。</li>
-          <li>培訓醫師看懂基因報告，並用國際通用的資料格式（FHIR）讓各院資料可以互通。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>護理人力與友善職場</h3>
-        <div class="talk"><ul>
-          <li>留住人才的做法：彈性工時、邀請退休同仁回流、生育與育兒補助（例如 0 到 6 歲每月補助 1,000 元），以及員工心理諮商。</li>
-          <li>導入智慧給藥、自動化紀錄等設備，減少非專業的工作，讓醫護人員專心照顧病人。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>社區照護與健康臺灣 888</h3>
-        <div class="talk"><ul>
-          <li>推動「健康 888」：運動處方、慢性病管理和預防保健。</li>
-          <li>醫學中心與基層診所合作，推動在宅住院與遠距照護，搭配居家監測設備，減少不必要的急診和住院。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>行政支持</h3>
-        <div class="talk"><ul>
-          <li>成立專責計畫辦公室，結合醫院與醫師公會，每週追蹤進度，確保經費用在政策方向上。</li>
-          <li>仍需克服的問題：公立醫院經費使用彈性較小（如出國補助、獎金發放），以及和衛生局等單位的橫向聯繫。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>演講場次</h3>
-        <div class="talk"><ul>
-          <li>高醫：吳文正院長、林育志主任（教師培育中心）、廖玉美主任（護理部）、蘇偉智醫師（大腸直腸外科）</li>
-          <li>高榮：曾陽明主任（教學研究部）、翁根本部長（兒童醫學部）、周宜平部長（急診部）、林伯翔主任（急診研創）、王郁鈞醫師（高齡醫學）、李清池主任（耳鼻喉科）、李佳榮副教授（婦女醫學部）、謝上致組長（醫企部）、張琦心理師</li>
-          <li>其他：陳金順院長、陳相國理事長、「說到做到」論壇</li>
-        </ul></div>
-      </section>
+<div class="two">
+  <div class="card"><h3 class="sub">各團隊</h3>
+    <table><thead><tr><th>類別</th><th>團隊</th><th class=r>場次</th><th class=r>完訓人次</th></tr></thead><tbody><tr><td>重症照護</td><td>PICU團隊</td><td class=r>42</td><td class=r>171</td></tr><tr><td>重症照護</td><td>NICU團隊</td><td class=r>7</td><td class=r>99</td></tr><tr><td>急診</td><td>兒醫急門診團隊</td><td class=r>9</td><td class=r>186</td></tr><tr><td>病房</td><td>6B團隊</td><td class=r>3</td><td class=r>33</td></tr><tr><td>病房</td><td>7B團隊</td><td class=r>5</td><td class=r>74</td></tr><tr><td>病房</td><td>8B團隊</td><td class=r>5</td><td class=r>37</td></tr><tr><td>病房</td><td>SBR團隊</td><td class=r>4</td><td class=r>39</td></tr><tr><td>專科團隊</td><td>兒童發展團隊</td><td class=r>13</td><td class=r>77</td></tr><tr><td>專科團隊</td><td>兒童癌症團隊</td><td class=r>13</td><td class=r>31</td></tr><tr><td>專科團隊</td><td>兒童復健團隊</td><td class=r>1</td><td class=r>4</td></tr><tr><td>專科團隊</td><td>兒少視覺復能團隊</td><td class=r>1</td><td class=r>尚未登錄</td></tr></tbody></table></div>
+  <div class="card"><h3 class="sub">參與人員類別</h3><ul class="roles"><li><span>醫師</span><div class="bar"><i style="width:5.9%"></i></div><b class="num">44</b><small>5.9%</small></li><li><span>護理師</span><div class="bar"><i style="width:62.3%"></i></div><b class="num">468</b><small>62.3%</small></li><li><span>醫事技術人員</span><div class="bar"><i style="width:21.7%"></i></div><b class="num">163</b><small>21.7%</small></li><li><span>社工師</span><div class="bar"><i style="width:0.4%"></i></div><b class="num">3</b><small>0.4%</small></li><li><span>醫學生及實習生</span><div class="bar"><i style="width:8.4%"></i></div><b class="num">63</b><small>8.4%</small></li><li><span>其他</span><div class="bar"><i style="width:1.3%"></i></div><b class="num">10</b><small>1.3%</small></li></ul>
+    <p class="note">完訓人次以上課人員明細為準。醫事技術人員含藥事、醫檢、放射、呼吸治療、物理治療、職能治療、營養、臨床心理、語言治療與聽力。</p></div>
+</div></section><section class="goal ev-e1" id="g3"><div class="ghead"><p class="gno">目標三</p><h2>提高急重難科醫師的回流醫院誘因</h2><p class="axis">主軸：急重症人力穩定性提升率</p></div><div class="card"><ul class="kpis"><li><span class="lb">急重難科醫師人力</span><b class="num">28<small>人</small></b></li><li><span class="lb">急重症單位留任率</span><b class="num">100<small>%</small></b><div class="bar" role="img" aria-label="達成 153.8%"><i style="width:100.0%"></i></div><span class="pct">目標 65%｜已達標</span></li><li><span class="lb">院長留任面談</span><b class="num">17<small>位</small></b></li><li><span class="lb">臨床專業設備到貨</span><b class="num">20<small>項</small></b><div class="bar" role="img" aria-label="達成 95.2%"><i style="width:95.2%"></i></div><span class="pct">目標 21項｜達成 95.2%</span></li></ul></div><div class="card"><h3 class="sub">相關經費執行</h3><ul class="budget"><li><div class="bh"><span class="lb">臨床專業設備</span><b class="num">82.1%</b></div><div class="bar"><i style="width:82.1%"></i></div><p class="bs">決標金額 8,632,436 元／核定 10,519,000 元</p></li></ul><p class="note">設備科目以決標金額計。</p></div></section><section class="goal ev-e5" id="g4"><div class="ghead"><p class="gno">目標四</p><h2>建立明確的職涯發展路徑</h2><p class="axis">主軸：強化導師制度</p></div><div class="card"><ul class="kpis"><li><span class="lb">新增年輕主治醫師導師</span><b class="num">4<small>位</small></b><div class="bar" role="img" aria-label="達成 200%"><i style="width:100.0%"></i></div><span class="pct">目標 2位｜已達標</span></li><li><span class="lb">導生輔導</span><b class="num">35<small>位學員</small></b></li><li><span class="lb">ACGME 核心教師認證</span><b class="num">10<small>位</small></b></li></ul></div><div class="two">
+  <div class="card"><h3 class="sub">臨床教師認證</h3>
+    <div class="stats">
+      <div class="stat"><b class="num">121<small class="of">／304</small></b><span>有效臨床教師／符合資格人數</span></div>
+      <div class="stat"><b class="num">39.8%</b><span>兒童醫院認證率</span></div>
+      <div class="stat"><b class="num">36.1%</b><span>全院認證率</span></div>
     </div>
+    <table><thead><tr><th>職類</th><th class=r>有效認證</th><th class=r>符合資格</th><th class=r>認證率</th></tr></thead><tbody><tr><td>護理</td><td class=r>115</td><td class=r>281</td><td class=r>40.9%</td></tr><tr><td>臨床心理</td><td class=r>2</td><td class=r>9</td><td class=r>22.2%</td></tr><tr><td>呼吸治療</td><td class=r>2</td><td class=r>8</td><td class=r>25.0%</td></tr><tr><td>其他醫事職類</td><td class=r>2</td><td class=r>6</td><td class=r>33.3%</td></tr></tbody></table>
+    <p class="note">符合資格人數少於 5 人的職類合併為「其他醫事職類」。醫師不在臨床教師認證範圍內。</p>
   </div>
-  <div class="pager"></div>
-</main>
+  <div class="card"><h3 class="sub">核心教師認證人數（含醫師）</h3><div class="stats"><div class="stat"><b class="num">10</b><span>ACGME 臨床教練</span></div><div class="stat"><b class="num">16</b><span>精準醫學教育核心教師</span></div><div class="stat"><b class="num">1</b><span>EPA 核心教師</span></div></div></div>
+</div></section>
 
-<!-- ===================== 04.07 ===================== -->
-<main class="wrap detail ev2" id="e0407" data-prev="e0321" data-next="e0411" hidden>
-  <div class="back"><a href="#overview">← 返回總覽</a><span>2 / 6</span></div>
-  <div class="banner"><div class="bicon"><svg class="ic"><use href="#i-team"/></svg></div><div><p class="bdate">04.07 · 星期二 · 台北</p><h2>健康臺灣深耕計畫交流</h2><p class="host">台北慈濟醫院</p><p class="desc">依範疇一到範疇四，分享職場優化、人才培育、智慧科技與永續治理的做法和遇到的困難。</p></div></div>
-  <div class="notes">
-    <nav class="toc" aria-label="本場章節"><p>會議重點</p></nav>
-    <div class="chapters">
-      <section class="chapter"><h3>推動理念</h3>
-        <div class="talk"><ul>
-          <li>深耕計畫不只是申請補助，而是依醫院長期願景，用數據找出問題、訂出有說服力的指標，再分年推動。</li>
-          <li>例行工作用 KPI 追蹤，確保穩定達成；創新工作用 OKR 管理，保留嘗試和調整的空間。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>範疇一：優化醫療職場</h3>
-        <div class="talk"><ul>
-          <li>用 Power Apps 和 Power BI 把護理行政工作數位化，減少紙本和重複作業。</li>
-          <li>重視同仁身心健康，舉辦正念、瑜伽和音波療癒等活動。</li>
-          <li>用 RACI+S 分清楚每個人的角色和責任，加上主管授權，讓同仁推動專案更有信心。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>範疇二：人才培育</h3>
-        <div class="talk"><ul>
-          <li>導入新一代 CBME 與電子學習歷程（ePortfolio），結合 AI 助教、VR 教學和虛擬病人模擬訓練。</li>
-          <li>把 ESG 永續觀念納入人才培育，擴及行政和醫事人員的教育與認證。</li>
-          <li>派核心教師參加 AMEE 和哈佛醫學院課程，和聯盟醫院一起成長。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>範疇三：導入智慧科技</h3>
-        <div class="talk"><ul>
-          <li>建置 Smart-on-FHIR 環境，解決醫院和診所之間資料交換困難的問題。</li>
-          <li>由種子教師把資訊人員的說法轉成臨床人員聽得懂的話，以小步驟、陪伴式的方式導入，減少第一線的排斥。</li>
-          <li>整合區域資料，建立全人口健康風險分級模型，用 AI 評估風險和介入成效。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>範疇四：健康臺灣與災害應變</h3>
-        <div class="talk"><ul>
-          <li>開發 IDMate 手機救護系統，讓地震、水災現場的紀錄與資訊整合更有效率。</li>
-          <li>回收醫療塑膠再製成復健球和機能衣；用 AI 預測人流來調整空調和換氣，節省能源。</li>
-          <li>與教育局合作提供公費生名額，培養未來的醫療人力。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>執行上的困難</h3>
-        <div class="talk"><ul>
-          <li>政府補助計畫和院內原有專案方向不同時，需要主管明確決定優先順序。</li>
-          <li>研究助理、AI 工程師不容易招募，要提早布局，必要時用內部培訓補足。</li>
-          <li>高科技設備採購建議用最有利標，避免只看最低價而影響品質。</li>
-        </ul></div>
-      </section>
-    </div>
-  </div>
-  <div class="pager"></div>
-</main>
-
-<!-- ===================== 04.11 ===================== -->
-<main class="wrap detail ev3" id="e0411" data-prev="e0407" data-next="e0808" hidden>
-  <div class="back"><a href="#overview">← 返回總覽</a><span>3 / 6</span></div>
-  <div class="banner"><div class="bicon"><svg class="ic"><use href="#i-kid"/></svg></div><div><p class="bdate">04.11 · 星期六 · 台北</p><h2>兒童醫療的新境界與未來展望</h2><p class="host">臺大醫院小兒部 120 週年暨臺大兒童醫院健康台灣深耕論壇｜08:30–17:00｜臺大兒童醫院 B1 視聽講堂</p><p class="desc">健保署、醫事司長官說明兒童醫療政策，臺大兒醫各次專科分享發展方向。</p></div></div>
-  <div class="notes">
-    <nav class="toc" aria-label="本場章節"><p>會議重點</p></nav>
-    <div class="chapters">
-      <section class="chapter"><h3>政策與院方致詞</h3>
-        <div class="talk"><h4>兒童醫療健保的改革與未來展望</h4><p class="who">健保署 陳亮妤署長</p><ul>
-          <li>臺灣高齡化速度很快，兒科就醫需求和家長對健康的期待也同步提高。</li>
-          <li>兒科給付調整會先從住院的急重難罕症開始，再擴及門診。</li>
-          <li>藥費成長比總額成長快，需要調整結構。</li>
-        </ul></div>
-        <div class="talk"><h4>兒童醫療的未來發展關鍵與趨勢</h4><p class="who">醫事司 劉越萍司長</p><ul>
-          <li>建立兒童醫療網，由核心醫院、重點醫院和基層幼兒專責醫師分工合作，並設立兒童困難診斷平台。</li>
-          <li>新南向合作：印尼醫師來臺研習兒童心臟、小兒外科等技術。</li>
-          <li>兒科醫師人數不會增加，要靠數位轉型和智慧醫療補足，也鼓勵醫師出國進修。</li>
-        </ul></div>
-        <div class="talk"><h4>院方致詞</h4><p class="who">臺大醫院 余忠仁院長、臺大兒童醫院 李旺祚院長</p><ul>
-          <li>少子化下，醫療兩端需求反而增加，兒童心智方面的需求也比過去高很多。</li>
-          <li>健保應從按量計酬走向重視價值；重症罕病集中照顧、預防醫學普及化。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>各次專科的發展</h3>
-        <div class="talk"><h4>兒童心臟科</h4><ul><li>不用放射線的 3D 定位電燒和冷凍消融；基因心臟疾病中心為遺傳性心律不整做精準診斷和家族預防；經導管肺動脈瓣置換已納入健保。</li></ul></div>
-        <div class="talk"><h4>兒童血液腫瘤科</h4><ul><li>依基因把白血病分群治療，標靶藥物搭配化療；引進 CAR-T 細胞治療和新藥臨床試驗；長期追蹤兒癌存活者的生活品質。</li></ul></div>
-        <div class="talk"><h4>兒童神經科</h4><ul><li>用基因定序診斷並發展基因治療；導入監測系統和 AI 預測癲癇發作；兒童神經科醫師人力不足，需要更多誘因。</li></ul></div>
-        <div class="talk"><h4>兒童胸腔暨重症科</h4><ul><li>智慧加護病房用 AI 評估鎮靜是否過度；推動呼吸照護兒童返家照顧與安寧緩和；規劃全天候的急重症即時反應中心。</li></ul></div>
-        <div class="talk"><h4>兒童感染科</h4><ul><li>工作重心從治療感染症轉向感染管制、疫情監測和抗生素管理；專科醫師人力明顯不足。</li></ul></div>
-        <div class="talk"><h4>兒童腎臟科、內分泌科</h4><ul><li>腎臟科建立腎病基因資料庫，腹膜透析資料隔天就自動上傳到手機與儀表板。</li><li>內分泌科使用長效型針劑減少孩子打針的次數；用 AI 判讀骨齡，把省下的時間拿來和家長溝通。</li></ul></div>
-        <div class="talk"><h4>其他</h4><ul><li>新生兒科推動延遲夾臍和胎兒手術；兒童藥劑部建立專責藥師制度，兒童藥品調劑流程獲 SNQ 認證。</li><li>家庭與社會處方箋：推廣親子共讀，深入社區和學校處理兒童肥胖；在宅醫療協助使用呼吸器的孩子回家生活、回到學校。</li></ul></div>
-      </section>
-      <section class="chapter"><h3>下午場次</h3>
-        <div class="talk"><h4>健康台灣 深耕台灣</h4><p class="who">陳志鴻 召集人</p><ul>
-          <li>888 三高防治、長照 3.0；兒童醫療從懷孕期就開始照顧。</li>
-          <li>基層幼兒專責醫師、重點醫院、核心醫院三層分工；五年編列 489 億元預算。</li>
-        </ul></div>
-        <div class="talk"><h4>規劃多元人才培訓</h4><p class="who">張鑾英 醫師</p><ul>
-          <li>雙導師制度：每位專案主治醫師都有一位醫師導師和一位醫事導師。</li>
-          <li>舉辦跨領域研討會、共享教具和教案、鼓勵出國進修；未來要發展高階模擬教學和人才資源平台。</li>
-          <li>用臨床能力委員會（CCC）評估每個階段的成長；困難是工作量大，常常連晨會都無法參加。</li>
-        </ul></div>
-        <div class="talk"><h4>兒童藥師精進計畫</h4><p class="who">張香瑩 藥師</p><ul>
-          <li>專責藥師依孩子狀況給予用藥建議，系統會依體重計算劑量並提醒。</li>
-          <li>分級課程和種子藥師培訓，從臺大推廣到全臺兒科藥事體系。</li>
-        </ul></div>
-        <div class="talk"><h4>其他講題</h4><ul>
-          <li>童怡靖醫師：優化兒科醫療工作條件、糖尿病個案管理系統。</li>
-          <li>楊玲玲呼吸治療師：兒童居家照護，孩子被學校拒絕時，醫療團隊主動到學校協助。</li>
-          <li>林子歡醫師：智慧醫療應用，包括轉診轉運系統、AI 影像輔助和遠距診療。</li>
-          <li>黃啟南醫師：走出診間，用家庭與社會處方守護兒童健康。</li>
-          <li>林銘泰醫師：急重症兒童外接團隊七年經驗，希望全臺設立 2 到 3 個即時反應中心。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>心得：與本院對照</h3>
-        <div class="talk"><ul>
-          <li>臺大兒醫的強項是國家級平台、高階設備和政策領導；本院的強項是臨床量能高、13 個專科都有專責個案管理師，以及 AI 臨床預警系統已實際使用。</li>
-          <li>本院 13 位專科個管師由人才培育專案經理統籌，負責制度設計、跨科整合、成果呈現和人才培養。</li>
-        </ul></div>
-      </section>
-    </div>
-  </div>
-  <div class="pager"></div>
-</main>
-
-<!-- ===================== 08.08 ===================== -->
-<main class="wrap detail ev4" id="e0808" data-prev="e0411" data-next="e1008" hidden>
-  <div class="back"><a href="#overview">← 返回總覽</a><span>4 / 6</span></div>
-  <div class="banner"><div class="bicon"><svg class="ic"><use href="#i-grad"/></svg></div><div><p class="bdate">08.08 · 星期六 · 台北</p><h2>第三屆臺北醫學會 The Future is now</h2><p class="host">臺北醫學大學附設醫院（創院 50 週年）</p><p class="desc">從健康政策、AI 精準醫療，談到醫學教育的評量回饋、教練式引導與模擬教學。</p></div></div>
-  <div class="notes">
-    <nav class="toc" aria-label="本場章節"><p>會議重點</p></nav>
-    <div class="chapters">
-      <section class="chapter"><h3>開場：政策與未來醫療</h3>
-        <div class="talk"><h4>臺灣醫療展望</h4><p class="who">衛福部 林靜儀次長</p><ul>
-          <li>醫療從「治病」走向「預防和健康促進」，癌症篩檢和健康檢查的年齡往下延伸。</li>
-          <li>「健康幣」讓民眾做健檢、打疫苗時馬上得到回饋；善用三十年的健保資料。</li>
-          <li>除了以病人為中心，也要照顧醫療人員，讓醫療服務更有韌性、更節能。</li>
-        </ul></div>
-        <div class="talk"><h4>北醫附醫的過去、現在與未來</h4><p class="who">施俊明 院長</p><ul>
-          <li>創院 50 週年，以「未來」為主題，目標是讓大家健康活到一百歲。</li>
-          <li>未來醫療的 5 個方向：預防、預測、個人化、共同參與、精準。</li>
-        </ul></div>
-        <div class="talk"><h4>國民健康的挑戰與策略</h4><p class="who">許惠恒 副院長</p><ul>
-          <li>很多長者同時有多種慢性病，需要跨科別一起照顧；推動三高防治「健康臺灣 888」。</li>
-          <li>心臟、腎臟、代謝疾病要整合起來及早預防。</li>
-        </ul></div>
-        <div class="talk"><h4>告別平均值：AI 引領個人化精準醫療</h4><p class="who">石瑜 教授</p><ul>
-          <li>臨床試驗看的是「平均效果」，但每位病人都不同；AI 可以幫忙預測哪種治療對眼前這位病人最好。</li>
-        </ul></div>
-        <div class="talk"><h4>全球健康創新的未來</h4><p class="who">Prof. Anurag Mairal（史丹佛大學）</p><ul>
-          <li>醫療創新的方法在各國都適用；臺灣有很強的科技與製造實力，健保給付是創新能否普及的關鍵。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>醫學教育</h3>
-        <div class="talk"><h4>醫學教育中的教練式引導與 AI</h4><p class="who">Maya M. Hammoud, MD, MBA</p><ul>
-          <li>老師的角色從「打分數」轉為「教練」，用持續、雙向的回饋陪伴學生成長。</li>
-          <li>AI 可以協助評估和回饋，但老師的引導、關心和人際連結無法取代；也要照顧老師自己的身心。</li>
-        </ul></div>
-        <div class="talk"><h4>從 CBME 到精準教學</h4><p class="who">邱欣怡 助理教授</p><ul>
-          <li>要做到因材施教，評量本身要先做得準確可靠。</li>
-          <li>三個院區的評分差異，多半來自評分情境不同，而不是學生本身；三院老師需要坐下來一起校準。</li>
-          <li>AI 用來整理和呈現資料，學生能否獨立執行仍由老師判斷；評量資料要注意隱私。</li>
-        </ul></div>
-        <div class="talk"><h4>PGY 醫師的精準教育</h4><p class="who">鍾睿元 助理教授</p><ul>
-          <li>自建系統用 AI 檢查老師回饋的品質，避免只寫「很好」這類空泛評語；學生某項能力低於標準時及早輔導。</li>
-          <li>把學生的學習變化分為穩定、起伏、進步、退步四種；表現優秀的學生多屬穩定和進步型。</li>
-          <li>360 度評量普遍給分偏高，資深住院醫師的評分最能看出學生的問題。</li>
-        </ul></div>
-        <div class="talk"><h4>用科技擷取有意義的臨床回饋</h4><p class="who">嘉義基督教醫院教學部 李振威主任</p><ul>
-          <li>文字回饋常沒有寫出是在什麼情況下表現好，評估委員會很難判斷學生能否獨立執行。</li>
-          <li>導入 AI 語音記錄：老師用說的回饋平均 800 多字，大約是手寫的 16 倍，品質也最好。</li>
-          <li>提醒：有老師直接請 AI 寫出「完美回饋」，語音記錄能保留真實的教學過程。</li>
-          <li>感謝 CBME Taiwan Hub 與 CBME Week 對全臺推動的貢獻。</li>
-        </ul></div>
-        <div class="talk"><h4>綜合討論</h4><ul>
-          <li>評量的目的是幫助學生成長，而不是交差；應回到臨床現場的真實觀察。</li>
-          <li>培養學生自主學習的能力，是值得繼續努力的方向。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>模擬教學與虛擬醫院</h3>
-        <div class="talk"><h4>虛擬醫院與沉浸式學習</h4><p class="who">Hyun Soo Chung, MD, PhD（韓國延世大學）</p><ul>
-          <li>模擬教學讓學生在接觸真正病人前先練習；完整流程是「體驗、討論反思、融入課程」。</li>
-          <li>AI 可以扮演虛擬病人，但內容需要有人把關。</li>
-        </ul></div>
-        <div class="talk"><h4>沉浸式投影教室</h4><p class="who">徐永吉 助理教授</p><ul>
-          <li>用三面投影和 360 度實景拍攝，在小空間快速重現手術室、病房等場景，還可以安排標準化病人增加壓力。</li>
-          <li>應用在抽血、病人暴力事件、精神科約束等訓練，再回頭改善實際作業流程。</li>
-        </ul></div>
-        <div class="talk"><h4>智慧學習教室與數位教學諮詢</h4><p class="who">臺大醫院 劉政亨醫師</p><ul>
-          <li>教室蓋好之後，重點是有人協助老師使用：教學部設立單一窗口，由教學設計師、工程師和教材組一起幫忙。</li>
-          <li>做出鑑別診斷遊戲、藥師調劑練習網頁、化療藥物外洩 VR、AI 口試考官等教材。</li>
-        </ul></div>
-        <div class="talk"><h4>虛擬醫院在案例教學的應用</h4><p class="who">吳人傑 助理教授</p><ul>
-          <li>虛擬醫院重現臨床工作流程，讓學生在學校就熟悉住院醫師才會做的工作，學會承擔責任。</li>
-          <li>不認為 AI 能取代導師，真人老師的典範和啟發無法取代。</li>
-          <li>坦白分享新教學方式的學生滿意度很低；AI 虛擬病人一旦答錯，學生就不再信任，內容必須嚴格把關。</li>
-        </ul></div>
-      </section>
-    </div>
-  </div>
-  <div class="pager"></div>
-</main>
-
-<!-- ===================== 10.08 ===================== -->
-<main class="wrap detail ev5" id="e1008" data-prev="e0808" data-next="e1019" hidden>
-  <div class="back"><a href="#overview">← 返回總覽</a><span>5 / 6</span></div>
-  <div class="banner"><div class="bicon"><svg class="ic"><use href="#i-trophy"/></svg></div><div><p class="bdate">10.08 · 星期四 · 台中</p><h2>健康臺灣深耕計畫成果發表</h2><p class="host">臺中榮民總醫院</p><p class="desc">中部各院發表深耕計畫成果，並介紹衛福部的醫療資訊標準平台。</p></div></div>
-  <div class="notes">
-    <nav class="toc" aria-label="本場章節"><p>會議重點</p></nav>
-    <div class="chapters">
-      <section class="chapter"><h3>範疇二的五個子計畫</h3>
-        <div class="talk"><ul>
-          <li>臨床試驗：培養研究與試驗執行能力。</li>
-          <li>再生醫學：培養高門檻技術的專業人才。</li>
-          <li>國際醫療：國際合作與人才養成。</li>
-          <li>急重難科：在高壓環境下留住人才。</li>
-          <li>醫事人才：全人照護能力與職涯發展。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>臺中榮總急診部：留住急重症人才</h3>
-        <div class="talk"><ul>
-          <li>遇到的問題：急診壓力大、排班衝突、文書工作多，醫師訓練完就轉職，人很難補。</li>
-          <li>計畫做法：智慧排班、空班通知、病情預警和文書輔助，改善工作感受。</li>
-          <li>跨院合作：串聯各院醫師人力和可支援的班次，一起思考職涯發展。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>光田醫院：臨床試驗與再生醫學</h3>
-        <div class="talk"><ul>
-          <li>遇到的問題：專業訓練、研究設備和技術資源，很難由一家醫院自己建置完整。</li>
-          <li>計畫做法：成立臨床試驗產學聯盟，推動再生醫學人才計畫。</li>
-          <li>跨院合作：透過聯盟共享師資、技術交流和研究資源。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>醫療資訊與區域合作</h3>
-        <div class="talk"><h4>衛福部 臺灣醫療資訊標準大平台</h4><ul>
-          <li>以 FHIR 統一電子病歷格式，搭配 SNOMED CT、LOINC、RxNorm 等國際標準用語。</li>
-          <li>建立規則資料庫，統一健保申報和醫療品質規則；推動 SMART on FHIR 智慧醫療應用程式市集。</li>
-        </ul></div>
-        <div class="talk"><h4>屏東榮總 健康雲計畫</h4><ul>
-          <li>屏東過去缺少醫學中心等級的醫療，重症病人常要跨縣市就醫。</li>
-          <li>以優化工作環境、培育人才、智慧醫療和永續治理四個方向，串聯社區、衛生所和醫院的健康資料。</li>
-        </ul></div>
-      </section>
-    </div>
-  </div>
-  <div class="pager"></div>
-</main>
-
-<!-- ===================== 10.19 ===================== -->
-<main class="wrap detail ev6" id="e1019" data-prev="e1008" data-next="" hidden>
-  <div class="back"><a href="#overview">← 返回總覽</a><span>6 / 6</span></div>
-  <div class="banner"><div class="bicon"><svg class="ic"><use href="#i-globe"/></svg></div><div><p class="bdate">10.19 · 星期一 · 台北</p><h2>2026 全球健康福祉論壇</h2><p class="host">台北國際會議中心（全英文）｜主題：The Future of Global Care: Achieving Trust-Centric Digital Health</p><p class="desc">以「打造以信任為核心的數位健康」為主題，談資料標準、AI 治理與社區照護。</p><div class="figs"><div class="fig"><b>20 分鐘 → 13 秒</b><p>AI 協助護理交班</p></div><div class="fig"><b>9 分鐘 → 4 分鐘</b><p>法定傳染病自動通報</p></div><div class="fig"><b>27 家</b><p>已導入 Firebox 的醫學中心</p></div></div></div></div>
-  <div class="notes">
-    <nav class="toc" aria-label="本場章節"><p>會議重點</p></nav>
-    <div class="chapters">
-      <section class="chapter"><h3>開幕式</h3>
-        <div class="talk"><ul>
-          <li>論壇自 2005 年開始舉辦，是各國官員和專家交流健康福祉議題的平台。</li>
-          <li>數位健康的核心是「信任」：民眾相信資料受到保護，醫護人員相信 AI 安全可靠，政府建立好的治理和標準。</li>
-          <li>臺灣持續加強健康資料標準、系統互通和負責任的 AI 治理，也希望和各國在資料互通、資安與健康平權上合作。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>主題演講</h3>
-        <p class="sub">主持人：中央研究院 廖俊智院長</p>
-        <div class="talk"><h4>台灣數位健康願景 2030</h4><p class="who">衛生福利部部長</p><ul>
-          <li>面對的挑戰：2061 年老年人口將多於工作人口；85% 的 65 歲以上長者至少有一種慢性病；醫療人力不足。</li>
-          <li>目標：2030 年平均壽命達 82 歲，不健康的年數比例降到 8%。</li>
-          <li>醫療轉型：從醫院走向社區、從住院走向門診和居家、從治療走向預防。</li>
-          <li>三大重點：資安管理擴大到幾乎所有醫院；健康資料統一使用 FHIR 等國際標準，建立資料、規則、應用三個平台；成立三個中心確保 AI 安全可信。</li>
-          <li>實際成果：傳染病通報從 9 分鐘縮短到 4 分鐘、病歷 20 秒自動產生、護理交班從 20 分鐘縮短到 13 秒；推出「健康幣」鼓勵民眾打疫苗、做篩檢。</li>
-        </ul></div>
-        <div class="talk"><h4>從政策到平台：在 AI 時代擴大信任</h4><p class="who">Prof. Karen DeSalvo（杜蘭大學、前 Google 首席健康官）</p><ul>
-          <li>AI 已經發展到可以自己執行任務的「代理人」階段。</li>
-          <li>美國已有 AI 糖尿病管理工具通過 FDA 核准，猶他州也在試行讓 AI 開立低風險處方。</li>
-          <li>AI 可能偏離指令或存取不該看的資料，必須堅守「不傷害」的原則。</li>
-        </ul></div>
-        <div class="talk"><h4>美國醫療體系的 AI 轉型</h4><p class="who">Dr. Allen Hsiao（耶魯大學醫學院首席健康資訊官）</p><ul>
-          <li>2009 年起美國大力推動電子病歷，醫院使用率從 15% 提高到接近 100%。</li>
-          <li>美國醫師每年約有 1.25 億小時花在下班後補病歷；AI 語音病歷能自動記錄看診對話，是最快普及的 AI 工具，約 25 萬名醫師使用。</li>
-          <li>臺灣有單一健保、統一身分識別和全國資料庫，很有機會建立全國性的智慧醫療體系。</li>
-        </ul></div>
-        <div class="talk"><h4>揭開醫療 AI 的神秘面紗</h4><p class="who">Prof. Martin McKee（倫敦衛生與熱帶醫學院）</p><ul>
-          <li>AI 說得流利不代表真的懂，說得有自信也不代表正確，容易出現看似權威的錯誤。</li>
-          <li>測試準確率高，不代表能真正改善健康，還要評估成本、安全和對醫院運作的影響。</li>
-          <li>導入 AI 前先問三個問題：這件事該不該做？AI 做不做得到？就算做得到，該不該交給機器？</li>
-          <li>應該讓 AI 配合醫療，而不是讓醫療配合 AI；對 AI 要保持適度的信任。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>分組論壇一：醫療資料標準與互通</h3>
-        <div class="talk"><h4>講同一種語言：用醫療術語推動現代醫療</h4><p class="who">Dr. Simon Liu（前美國國家醫學圖書館副館長）</p><ul>
-          <li>醫院之間要合作，必須先有共同的語言；LOINC、SNOMED CT 等國際標準用語是資料互通的基礎。</li>
-        </ul></div>
-        <div class="talk"><h4>信任架構：個人健康紀錄與數位健康錢包</h4><p class="who">Dr. Boonchai Kijsanayotin（亞洲電子健康資訊網絡主席）</p><ul>
-          <li>以民眾為中心的健康錢包需要 8 項能力，包括身分確認、同意管理、資料互通和資安等。</li>
-          <li>介紹 WHO 全球數位健康認證網絡，以及泰國、印尼、寮國參與的東協健康錢包試辦計畫。</li>
-          <li>科技發展已經跑在法律前面，建議成立專責機構或跨部會委員會。</li>
-        </ul></div>
-        <div class="talk"><h4>泰國數位健康生態系</h4><p class="who">泰國公共衛生部資訊與通訊技術中心</p><ul>
-          <li>讓全國 30 多家醫院系統廠商都用統一的資料格式提供資料，靠資料標準化而不是單一系統，打好 AI 應用的基礎。</li>
-        </ul></div>
-        <div class="talk"><h4>數據驅動的照護與糖尿病 AI 專案</h4><p class="who">John Gilman（Google for Health 亞太區）</p><ul>
-          <li>健保署與 Google 合作，分析 7 年健保資料，為糖尿病病人做風險分級，已部署到全臺約 2 萬家診所，評估時間從 20 分鐘縮短到幾秒鐘。</li>
-          <li>串接健保快易通 App，提供個人化的飲食與運動建議，預計服務 100 萬名病人。</li>
-        </ul></div>
-        <div class="talk"><h4>臺灣數位健康的三個平台</h4><p class="who">衛生福利部資訊處 龐一鳴處長</p><ul>
-          <li>臺灣的做法是不用換掉醫院原本的系統，而是加上一層全國共用的轉換平台，就像幫舊電腦裝上新的作業系統。</li>
-          <li>Firebox 整合臺灣核心資料規範、FHIR 轉換工具和國際用語服務，2026 年已送到全臺 27 家醫學中心。</li>
-          <li>建立健康資料、健康規則（自動化健保申報）、健康應用三個平台。</li>
-        </ul></div>
-      </section>
-      <section class="chapter"><h3>分組論壇二：社區參與與負責任的 AI</h3>
-        <div class="talk"><h4>以社區為中心的健康未來</h4><p class="who">Prof. Lloyd Michener（杜克大學）</p><ul>
-          <li>在美國，住在不同地區的人平均壽命可以相差 10 到 20 年；科技能幫助基層醫療做得更連續、更全面。</li>
-          <li>「行動的速度取決於信任的速度」，醫療和 AI 的設計要和社區居民一起討論、一起決定。</li>
-        </ul></div>
-        <div class="talk"><h4>打造人人都能使用的數位安全網</h4><p class="who">Reggie Bicha（美國公共人類服務協會）</p><ul>
-          <li>以人為本，照顧人一生的需求；特別肯定臺灣長照 3.0 從家庭、社區到機構的連續照顧。</li>
-          <li>數位化之前先檢討流程，不要把 20 頁的紙本表單直接變成 20 頁的電子表單。</li>
-          <li>讓 AI 處理重複的行政工作，把時間留給社工和醫護人員陪伴民眾；重要決定仍由人來做。</li>
-        </ul></div>
-        <div class="talk"><h4>負責任的演算法</h4><p class="who">邱月香 榮譽主席（世界資訊科技暨服務業聯盟）</p><ul>
-          <li>科技的價值在於改善生活、讓醫療更公平，而不在技術有多複雜。</li>
-          <li>負責任的演算法有四個要素：目標明確、資料可靠、規則公平、持續改進。</li>
-        </ul></div>
-      </section>
-    </div>
-  </div>
-  <div class="pager"></div>
-</main>
-
-<script>
-(function(){
-  var stops=[
-    {id:'e0321',ev:'ev1',ic:'i-hosp',d:'03.21',n:'高醫 × 高榮'},
-    {id:'e0407',ev:'ev2',ic:'i-team',d:'04.07',n:'台北慈濟'},
-    {id:'e0411',ev:'ev3',ic:'i-kid',d:'04.11',n:'臺大兒醫'},
-    {id:'e0808',ev:'ev4',ic:'i-grad',d:'08.08',n:'北醫附醫'},
-    {id:'e1008',ev:'ev5',ic:'i-trophy',d:'10.08',n:'臺中榮總'},
-    {id:'e1019',ev:'ev6',ic:'i-globe',d:'10.19',n:'全球健康福祉論壇'}
-  ];
-  var box=document.getElementById('route'); if(!box) return;
-  var NS='http://www.w3.org/2000/svg';
-  var d='M50,130 C140,30 230,40 300,110 S440,200 520,120 S660,30 760,100 S900,180 950,90';
-  var svg=document.createElementNS(NS,'svg'); svg.setAttribute('viewBox','0 0 1000 220'); svg.setAttribute('role','img'); svg.setAttribute('aria-label','六場外訓的路線圖');
-  var p=document.createElementNS(NS,'path'); p.setAttribute('d',d); p.setAttribute('class','path'); svg.appendChild(p);
-  box.appendChild(svg);
-  var L=p.getTotalLength(), fr=[0,0.2,0.4,0.6,0.8,1];
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(!reduce){
-    var t=document.createElementNS(NS,'circle'); t.setAttribute('r','6'); t.setAttribute('class','traveler');
-    var am=document.createElementNS(NS,'animateMotion'); am.setAttribute('dur','14s'); am.setAttribute('repeatCount','indefinite'); am.setAttribute('path',d);
-    t.appendChild(am); svg.appendChild(t);
-  }
-  stops.forEach(function(s,i){
-    var pt=p.getPointAtLength(L*fr[i]);
-    var a=document.createElementNS(NS,'a'); a.setAttribute('href','#'+s.id); a.setAttribute('class','stop '+s.ev); a.setAttribute('aria-label',s.d+' '+s.n);
-    var g=document.createElementNS(NS,'g'); g.setAttribute('class','bob');
-    var up=pt.y>110; var ly=up? pt.y-44 : pt.y+52;
-    g.innerHTML='<circle class="ring" cx="'+pt.x+'" cy="'+pt.y+'" r="27"/><circle class="core" cx="'+pt.x+'" cy="'+pt.y+'" r="21"/>'+
-      '<use href="#'+s.ic+'" x="'+(pt.x-12)+'" y="'+(pt.y-12)+'" width="24" height="24" class="ic" style="stroke:currentColor;fill:none"/>'+
-      '<text x="'+pt.x+'" y="'+ly+'">'+s.d+'</text><text class="sm" x="'+pt.x+'" y="'+(ly+18)+'">'+s.n+'</text>';
-    a.appendChild(g); svg.appendChild(a);
-  });
-  var h=document.createElement('p'); h.className='hint'; h.textContent='點選站點，查看當天的會議重點'; box.appendChild(h);
-})();
-(function(){
-  var names={e0321:'03.21 高醫 × 高榮',e0407:'04.07 台北慈濟',e0411:'04.11 臺大兒醫',e0808:'08.08 北醫附醫',e1008:'10.08 臺中榮總',e1019:'10.19 全球健康福祉論壇'};
-  var ov=[document.getElementById('view-overview'),document.getElementById('overview-main')];
-  var details=[].slice.call(document.querySelectorAll('main.detail'));
-  var rail=[].slice.call(document.querySelectorAll('.rail a'));
-  details.forEach(function(d){
-    var toc=d.querySelector('.toc');
-    [].slice.call(d.querySelectorAll('.chapter > h3')).forEach(function(h){
-      var b=document.createElement('button'); b.type='button'; b.textContent=h.textContent;
-      b.addEventListener('click',function(){h.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
-      toc.appendChild(b);
-    });
-    var pg=d.querySelector('.pager'), p=d.dataset.prev, n=d.dataset.next, html='';
-    html+= p ? '<a href="#'+p+'"><span>← 上一場</span>'+names[p]+'</a>' : '<a href="#overview"><span>← 返回</span>總覽</a>';
-    html+= n ? '<a class="next" href="#'+n+'"><span>下一場 →</span>'+names[n]+'</a>' : '<a class="next" href="#overview"><span>返回 →</span>總覽</a>';
-    pg.innerHTML=html;
-  });
-  function show(id){
-    var target=document.getElementById(id);
-    var isDetail=!!(target && target.classList.contains('detail'));
-    ov.forEach(function(el){el.hidden=isDetail;});
-    details.forEach(function(d){d.hidden=(d!==target);});
-    var cur=isDetail?id:'overview';
-    rail.forEach(function(a){a.classList.toggle('on',a.dataset.v===cur);});
-    var on=document.querySelector('.rail a.on'); if(on){var ol=on.closest('ol'); ol.scrollLeft=on.parentNode.offsetLeft-16;}
-    window.scrollTo(0,0);
-  }
-  window.addEventListener('hashchange',function(){show(location.hash.slice(1));});
-  show(location.hash.slice(1));
-})();
-</script>
-
-</html>
+<footer>經費執行率為出國進修、研討會、臨床專業設備三個主要科目（20,849,581／29,312,976 元，截至 115 年 10 月 22 日），人事費等其他科目不在本表。<br>
+資料來源：教學部課程資訊與上課人員明細、教師認證資料、深耕計畫經費一覽表。本站由追蹤系統彙總產生，不含姓名、員工編號或個別明細。<br>
+另見：<a href="training/">2026 外訓歷程</a></footer>
+</div></body></html>
